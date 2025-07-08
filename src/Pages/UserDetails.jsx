@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useState,useEffect } from 'react'
+import { Link, useParams } from 'react-router-dom'
 
 function UserDetails() {
     const {id,name} =useParams();
@@ -11,6 +11,9 @@ const emailHandler= (e)=>{
 e.preventDefault();
 setMail(e.target.value);
 }
+useEffect(() => {
+  console.log("Hi");
+}, []);
 
 
 
@@ -41,6 +44,9 @@ setMail(e.target.value);
         <button onClick={()=>setCount(count+1)}>Increament</button>
         <button onClick={()=>setCount(count-1)}>Decreament</button>
         <button onClick={()=>setCount(0)}>Reset</button>
+        <div>
+          <Link to="/users">back to users</Link>
+        </div>
 
 
     </div>
