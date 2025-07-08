@@ -7,9 +7,10 @@ import UserDetails from './Pages/UserDetails'
 import UserList from './Pages/UserList'
 
 function App() {
+
   return (
 
-    <>
+    <div >
     <nav>
       <Link to="/">Home</Link> | {" "}
       <Link to="/about">About</Link> | {" "}
@@ -26,7 +27,7 @@ function App() {
       <Route path="*" element={<h2>404 Page Not Found</h2>}/>
     </Routes>
      
-    </>
+    </div>
   )
 }
 
