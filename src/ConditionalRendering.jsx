@@ -13,9 +13,11 @@ const [logged, setLogged] = useState(false);
     <h2>{logged ? "Welcome" : "please login"}</h2>
 
 {logged ?(
-  <button disabled={logged} onClick={()=>setLogged(true)}>Login</button>
-  ) :(
+  
  <button onClick={()=>setLogged(false)}> Logout</button>
+
+  ) :(
+   <button disabled={logged} onClick={()=>setLogged(true)}>Login</button>
   )}
 
 
