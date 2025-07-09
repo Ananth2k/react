@@ -1,9 +1,12 @@
 import React, { useContext,useState } from 'react'
 import UserContext from './UserContext';
+import useUser from '../Hooks/useUser';
 
 function Profile() {
 
-    const {user,setUser} = useContext(UserContext);
+    // const {user,setUser} = useContext(UserContext);
+    const {user,setUser} =useUser();
+
     
     const[name, setName]=useState(user.name);
     const[email, setMail]=useState(user.email);

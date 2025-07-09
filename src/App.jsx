@@ -1,6 +1,8 @@
 import React from 'react'
 import Routing from './Routing'
 import ContextApi from './ContextApi'
+import AutoFocusInput from './day-9/AutoFocusInput'
+import Timer from './day-9/Timer'
 
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
 
     <div >
    {/* <Routing/> */}
-   <ContextApi/>
+   {/* <ContextApi/> */}
+   <AutoFocusInput/>
+   <Timer/>
     </div>
   )
 }
